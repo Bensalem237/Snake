@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/mekon/OneDrive/Desktop/Projects/Snake/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Snake.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Snake.dir\\src\\main.cpp.obj -c C:\\Users\\mekon\\OneDrive\\Desktop\\Projects\\Snake\\src\\main.cpp",
+  "file": "C:/Users/mekon/OneDrive/Desktop/Projects/Snake/src/main.cpp",
+  "output": "CMakeFiles/Snake.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/mekon/OneDrive/Desktop/Projects/Snake/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Snake.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Snake.dir\\src\\snake.cpp.obj -c C:\\Users\\mekon\\OneDrive\\Desktop\\Projects\\Snake\\src\\snake.cpp",
+  "file": "C:/Users/mekon/OneDrive/Desktop/Projects/Snake/src/snake.cpp",
+  "output": "CMakeFiles/Snake.dir/src/snake.cpp.obj"
+}
+]
