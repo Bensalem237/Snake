@@ -6,7 +6,6 @@ int main() {
     SetConsoleOutputCP(65001);
     Application app;
     app.hideCursor();
-    app.draw();
-    std::cin.ignore();
+    app.run();
     return 0;
 }

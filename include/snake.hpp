@@ -3,16 +3,20 @@
 class Application {
 private :
     // Defining a 20 x 20 array to store the board
-    char grid[20][20];
+    char grid[20][35];
     int score;
+    bool gameOver = false;
 
     // Snake's position (initialy at the center of the grid)
-    int sX = 9, sY = 9;
+    int sX = 17, sY = 9;
     char head = 'O';
     char body = 'o';
 
     // Food position
     int fX, fY;
+
+    int dX = 1;
+    int dY = 0;
 
 public :
     /**
@@ -36,7 +40,7 @@ public :
     /**
      * @brief Updates the position of the snake and the food
      */
-    void update();
+    void run();
 
     /**
      * @brief Draws the game board
@@ -52,4 +56,15 @@ public :
      * @brief Checks if there is any collision with the boundaries or with the snake itself at every iteration
      */
     void checkCollision();
+
+    /**
+     * @brief spawns food at a random position
+     */
+    void spawnFood();
+
+    /**
+     * @brief Updates the snake's position
+     */
+    void update();
+
 };
