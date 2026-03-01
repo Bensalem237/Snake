@@ -2,19 +2,29 @@
 
 class Application {
 private :
-    // Defining a 20 x 20 array to store the board
+    // 20 x 35 array to store the grid
     char grid[20][35];
-    int score;
-    bool gameOver = false;
+    char head = 'O'; // Snake's head
+    char body = 'o'; // Snake's body
+
+    int score; // Player's actual score
+    bool gameOver = false; // whether the game is running or not
+    bool hasEaten = false; // Whether or not the snake has eaten
 
     // Snake's position (initialy at the center of the grid)
-    int sX = 17, sY = 9;
-    char head = 'O';
-    char body = 'o';
+    int hX = 17, hY = 9;
 
     // Food position
     int fX, fY;
 
+    // Arrays store the trajectory of the snake at each iteration in order to implement the snake's displacement
+    int bX[100] = {15, 16};
+    int bY[100] = {9, 9};
+
+    // The number of characters of the body
+    int nb = 2;
+
+    // Stores the direction in which the snake is moving
     int dX = 1;
     int dY = 0;
 
@@ -38,7 +48,7 @@ public :
     void hideCursor();
 
     /**
-     * @brief Updates the position of the snake and the food
+     * @brief Runs the game
      */
     void run();
 
